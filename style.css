@@ -20,10 +20,11 @@ body {
     margin: 20px auto;
     width: 50%;
     font-size: 20px;
-    
-    transition: 
-        background-color 1s ease-in-out,
-        font-size 1s ease-in-out;
+    border-radius: 10px;
+}
+
+.box:hover {
+    animation: changeBox 1s ease-in-out;
 }
 
 /* 1st change */
@@ -63,7 +64,7 @@ h1 {
     
     /* Required transition */
     transition: width 1s ease-in-out,
-                background-color 4s ease-in-out;
+                background-color 1s ease-in-out;
 }
 
 /* Box 1 */
@@ -94,4 +95,31 @@ h1 {
 .box3:hover {
     width: 70%;
     background-color: #EE6C4D;
+}
+@keyframes changeBox {
+
+    0% {
+        background-color: #3D5A80;
+        font-size: 40px;
+    }
+
+    25% {
+        background-color: brown;
+        font-size: 25px;
+    }
+
+    50% {
+        background-color: red;
+        font-size: 70px;
+    }
+
+    75% {
+        background-color: yellow;
+        font-size: 35px;
+    }
+
+    100% {
+        background-color: purple;
+        font-size: 100px;
+    }
 }

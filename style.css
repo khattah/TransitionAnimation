@@ -5,6 +5,49 @@ body {
     text-align: center;
     padding: 40px;
 }
+body {
+    background-color: #F4F1EA;
+    font-family: 'Poppins', sans-serif;
+    color: #293241;
+    text-align: center;
+    padding: 40px;
+}
+
+.box {
+    background-color: #3D5A80;
+    color: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 50%;
+    font-size: 20px;
+    
+    transition: 
+        background-color 1s ease-in-out,
+        font-size 1s ease-in-out;
+}
+
+/* 1st change */
+.box:hover {
+    background-color: #98C1D9;
+    font-size: 25px;
+}
+
+/* Different content tags can have different hover effects */
+
+h1:hover {
+    background-color: #EE6C4D;
+    font-size: 30px;
+}
+
+p:hover {
+    background-color: #98C1D9;
+    font-size: 28px;
+}
+
+button:hover {
+    background-color: #293241;
+    font-size: 26px;
+}
 
 h1 {
     margin-bottom: 40px;
